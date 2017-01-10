@@ -50,14 +50,34 @@ table {
 /*Styling starts here*/
 
 body{
-  max-width: 960px;
   font-family: sans-serif;
   margin: 0 auto;
+}
+
+main{
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+header{
+  max-width: 100%;
+  background-color: black;
+  height: 200px;
+ text-align: center;
+}
+
+h1{
+  padding-top: 50px;
+  font-size: 50px;
+  color: white;
 
 }
 
 h2{
-  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
 }
@@ -67,5 +87,11 @@ p{
 }
 
 .not{
-  color: red;
+  color: red
+}
+
+li{
+  padding-bottom: 5px;
+  list-style-type: circle;
+  padding left: 5px;
 }
