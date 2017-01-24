@@ -1,0 +1,48 @@
+[class*='col-md-'] {
+    height: 600px;
+    min-height: 600px;
+    max-height: 600px;
+}
+
+.header, .footer {
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+}
+.header{
+  margin-top: 3%;
+}
+
+body{
+  font-size: 20px;
+  font-weight: bold;
+}
+.middleHeight{
+height: 550px;
+min-height: 550px;
+max-height: 550px;
+}
+
+.lowerThird{
+  height: 200px;
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.mainBody{
+  height: 250px;
+  min-height: 250px;
+  max-height: 250px;
+}
+
+.mainThree{
+  height: 600px;
+  min-height: 600px;
+  max-height: 600px;
+}
+
+.mainThreeLeft .mainThreeRight{
+  height: 200px;
+  min-height: 200px;
+  max-height: 200px;
+}
