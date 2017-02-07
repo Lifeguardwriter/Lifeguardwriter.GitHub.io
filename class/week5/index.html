@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,51 +17,78 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-    [class*='col-md-'] {
-        height: 600px;
-        min-height: 600px;
-        max-height: 600px;
-    }
+        [class*='col-md-'] {
+            height: 600px;
+            min-height: 600px;
+            max-height: 600px;
+        }
 
-    .header {
-        height: 75px;
-        min-height: 75px;
-        max-height: 75px;
-}
-  .mid{
-    height: 600px;
-    min-height: 600px;
-    max-height: 600px;
-  }
-  .bottom{
-    height: 200px;
-    min-height: 200px;
-    max-height: 200px;
-  }
+        .header {
+            height: 75px;
+            min-height: 75px;
+            max-height: 75px;
+        }
+
+        .mid {
+            height: 600px;
+            min-height: 600px;
+            max-height: 600px;
+        }
+
+        .bottom {
+            height: 200px;
+            min-height: 200px;
+            max-height: 200px;
+        }
+        .paddingMargin img {
+            margin-top: 8%;
+            margin-left: 10%;
+            max-width: 900px;
+        }
+
+        .paddingMargin div {
+            margin-left: 20%;
+        }
+/*-----*/
+        .displayed img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100px;
+        }
+
+        
+
+
     </style>
 
 
-  </head>
-  <body>
-<div id="main" class="container">
-  <div class="row">
-    <div class="col-md-3 randomColor header"></div>
-    <div class="col-md-7 randomColor header"></div>
-    <div class="col-md-1 randomColor header"></div>
-    <div class="col-md-1 randomColor header"></div>
-  </div>
+</head>
 
-<div class="row">
-  <div class="col-md-12 randomColor mid">
-  </div>
-</div>
-  <div class="row">
-    <div class="col-md-3 randomColor bottom"></div>
-    <div class="col-md-3 randomColor bottom"></div>
-    <div class="col-md-3 randomColor bottom"></div>
-    <div class="col-md-3 randomColor bottom"></div>
-  </div>
-</div>
+<body>
+    <div id="main" class="container">
+        <div class="row">
+            <div class="col-md-3 randomColor header"></div>
+            <div class="col-md-7 randomColor header"></div>
+            <div class="col-md-1 randomColor header"></div>
+            <div class="col-md-1 randomColor header"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 randomColor mid paddingMargin">
+              <img src="images/Fish-PNG-image.png" alt="fish">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 randomColor bottom displayed">
+            <img src="images/Fish-PNG-image.png" alt="fish"></div>
+
+            <div class="col-md-3 randomColor bottom"></div>
+
+            <div class="col-md-3 randomColor bottom"></div>
+            <div class="col-md-3 randomColor bottom"></div>
+        </div>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -85,5 +113,6 @@
 
         })
     </script>
-  </body>
+</body>
+
 </html>
