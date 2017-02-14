@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>week 6</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .header {
+            height: 75px;
+            min-height: 75px;
+            max-height: 75px;
+        }
+
+        .firstText {
+            height: 100px;
+            min-height: 100px;
+            max-height: 100px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: blue;
+            line-height: 100px;
+        }
+
+        .secondText {
+            height: 90px;
+            min-height: 90px;
+            max-height: 90px;
+        }
+
+        .secondText img {
+            height: 75%;
+            padding-top: 15px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .star {
+            max-width: 100px;
+        }
+
+        .rowOne {
+            height: 150px;
+            min-height: 150px;
+            max-height: 150px;
+        }
+
+        .boxOne img {
+            height: 75%;
+            padding-top: 15px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .boxTwo img {
+            margin-top: 5%;
+            padding-left: 5%;
+        }
+
+        .boxThree {
+            text-align: center;
+        }
+
+        .boxThree img {
+            margin-left: 40%;
+        }
+
+        .rowTwo {
+            height: 150px;
+            min-height: 150px;
+            max-height: 150px;
+        }
+
+        .rowThree {
+            height: 150px;
+            min-height: 150px;
+            max-height: 150px;
+        }
+
+        .relativeParent {
+            position: relative;
+        }
+
+        .relativeParent img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .relativeParent2 {
+            position: relative;
+        }
+
+        .relativeParent2 img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #pic2SideBySide{
+          left: 35%;
+        }
+        #pic2SideBySide2{
+          left: 65%;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!--header-->
+            <div class="col-md-3 randomColor header"></div>
+            <div class="col-md-3 randomColor header"></div>
+            <div class="col-md-3 randomColor header"></div>
+            <div class="col-md-3 randomColor header"></div>
+
+        </div>
+        <!--first text-->
+        <div class="row">
+
+            <div class="col-md-12 randomColor firstText">
+                Words and ish
+            </div>
+        </div>
+        <div class="row">
+            <!--Second Text-->
+            <div class="col-md-12 randomColor secondText">
+                <img class="star" src="images/star.png" alt="star">
+            </div>
+        </div>
+        <div class="row">
+            <!--row 1-->
+            <div class="col-md-4 randomColor rowOne boxOne">
+                <img class="star" src="images/star.png" alt="star">
+            </div>
+            <div class="col-md-4 randomColor rowOne boxTwo">
+                <img class="star" src="images/star.png" alt="star">
+                <img class="star" src="images/star.png" alt="star">
+                <img class="star" src="images/star.png" alt="star">
+            </div>
+            <div class="col-md-4 randomColor rowOne boxThree">
+                <img class="star" src="images/star.png" alt="star">
+                <div>
+                    Help me
+                </div>
+                <div>
+                    I don't know what I'm doing
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 randomColor rowTwo relativeParent">
+              <img class="star" src="images/star.png" alt="star">
+
+
+            </div>
+            <div class="col-md-4 randomColor rowTwo relativeParent2">
+              <img id="pic2SideBySide" class="star" src="images/star.png" alt="star">
+              <img id="pic2SideBySide2" class="star" src="images/star.png" alt="star">
+
+            </div>
+            <div class="col-md-4 randomColor rowTwo">
+
+            </div>
+        </div>
+        <!--row 2-->
+        <div class="row">
+            <div class="col-md-4 randomColor rowThree">
+
+            </div>
+            <div class="col-md-4 randomColor rowThree">
+
+            </div>
+            <div class="col-md-4 randomColor rowThree">
+
+            </div>
+        </div>
+        <!--row 3-->
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * max + min);
+        }
+
+        $(document).ready(function() {
+
+            var bodyColumns = $(".randomColor");
+
+            bodyColumns.each(function() {
+
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+            })
+
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+        })
+    </script>
+</body>
+
+</html>
