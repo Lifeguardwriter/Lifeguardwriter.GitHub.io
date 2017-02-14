@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>week 6</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .logo {
+            height: 75px;
+            min-height: 75px;
+            max-height: 75px;
+        }
+
+        .nav {
+            height: 75px;
+            min-height: 75px;
+            max-height: 75px;
+        }
+
+        .mainImage {
+            height: 500px;
+            min-height: 500px;
+            max-height: 500px;
+        }
+        .image{
+          height: 250px;
+          min-height: 250px;
+          max-height: 250px;
+        }
+        .text{
+          height: 200px;
+          min-height: 200px;
+          max-height: 200px;
+        }
+        .footer{
+          height: 100px;
+          min-height: 100px;
+          max-height: 100px;
+        }
+        img{
+          max-height: 500px;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!--logo-->
+            <div class="col-md-12 randomColor logo">Logo for the company</div>
+        </div>
+        <div class="row">
+            <!--nav-->
+            <div class="col-md-3 randomColor nav">nav bar Home</div>
+            <div class="col-md-3 randomColor nav">nav bar Sales</div>
+            <div class="col-md-2 randomColor nav">nav bar Lease a car</div>
+            <div class="col-md-2 randomColor nav">nav bar available cars</div>
+            <div class="col-md-2 randomColor nav">nav bar contact</div>
+
+        </div>
+        <div class="row">
+            <!--mainImage-->
+            <div class="col-md-12 randomColor mainImage"> <img src="wf.JPG" alt="Tings" /> Slider for Cars and their deals - image based</div>
+        </div>
+
+        <div class="row">
+            <!--images-->
+            <div class="col-md-4 randomColor image">Image of car on sale</div>
+            <div class="col-md-4 randomColor image">Image of car on sale</div>
+            <div class="col-md-4 randomColor image">Image of car on sale</div>
+
+        </div>
+        <div class="row">
+            <!--text-->
+            <div class="col-md-4 randomColor text">This design will feature images of the cars, as it’s main focus.
+              The idea of this is to draw the users attention to the car they are looking for.
+              The sliding bar will allow for people to easily see the promotions happening at the store.
+              The nav bar will have a drop down menu to narrow car searches to make the consumers lives easier. </div>
+            <div class="col-md-4 randomColor text"></div>
+            <div class="col-md-4 randomColor text"></div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12 randomColor footer">Footer, with links to social media</div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * max + min);
+        }
+
+        $(document).ready(function() {
+
+            var bodyColumns = $(".randomColor");
+
+            bodyColumns.each(function() {
+
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+            })
+
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+        })
+    </script>
+</body>
+
+</html>
