@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>javascript</title>
+  </head>
+  <body>
+    Hello World
+    <div id="myDiv">Look some text!</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    // () means execute function
+    // double slash means ignore this line
+    /*
+    Everything between this is ingored */
+
+
+      alert("This is a popup");
+      console.log("this is for debugging messages");
+      var myVar;
+// in quotes in a string
+      var myAnotherVar = "Here is my another var";
+      alert("myAnotherVar");
+      // no other code will pop up until we hit okay on the alert
+      console.log(myAnotherVar);
+//concatenation (adding it to the variable)
+var myName = "Anderson"
+var myFirstName = "Mark"
+alert("my first name is " +myFirstName + " and my last name is "+myName);
+function sayMyName(){
+  //Everything in code block will be excuted
+  console.log("Your name is"+myName);
+}
+//calling the function
+sayMyName();
+
+function sayMyName2(){
+  //Everything in code block will be excuted
+  console.log("Your name is"+name);
+}
+//calling the function
+sayMyName2("Mark");
+sayMyName2("Bradley");
+/*when the document is ready, jquesry gets the element with id mydiv and calls the html function. html function will replace the html within the element*/
+$(document).ready(function(){
+  //alert("the document is ready!");
+  $("#myDiv").html("Hey, i was able to change the DOM");
+  $("#myDiv").append("<br>add something more!");
+});
+    </script>
+  </body>
+</html>
