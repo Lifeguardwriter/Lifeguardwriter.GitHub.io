@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>holy grail</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <!--try container-fluid-->
+        <div class="row">
+            <div class="col-md-12 header">
+                <ul class="nav nav-tabs nav-justified">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">Profile</a></li>
+                    <li role="presentation"><a href="#">Messages</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="row" id="main">
+            <div class="col-md-2 randomColor ads">
+
+            </div>
+            <div class="col-md-8 randomColor" id="posts">
+
+            </div>
+            <div class="col-md-2 randomColor">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12 footer randomColor">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * max + min);
+        }
+
+        $(document).ready(function() {
+
+            var bodyColumns = $(".randomColor");
+
+            bodyColumns.each(function() {
+
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+            })
+
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+        })
+    </script>
+    <script type="text/javascript">
+        /*<div class="media">
+                  <div class="media-left media-middle">
+                    <a href="#">
+                      <img class="media-object" src="..." alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Middle aligned media</h4>
+                    ...
+                  </div>
+                </div>
+                */
+
+        var postsData = [
+          {
+          //create data for each post
+                image: "images/pic1.jpg",
+                subheading: "I don't want it to be cold",
+                content: "Curabitur ut rutrum mi, ut pretium nunc. Cras sit amet congue enim, et sagittis lorem. In maximus metus ut convallis finibus. Nam mi felis, ornare sed interdum non, efficitur ac ex. Cras cursus erat lectus, vitae viverra quam lacinia rutrum. Vestibulum sodales dolor tempus ante accumsan rhoncus. Aenean aliquam cursus orci a molestie. Fusce mollis facilisis fermentum. Mauris ornare placerat nulla ac gravida. Curabitur non pellentesque dui. Cras feugiat sollicitudin mi, ac varius justo cursus non. Nullam ut mauris at lectus mattis pulvinar."
+            },
+            {
+                image: "images/pic2.jpeg",
+                subheading: "Brrrrr",
+                content: "Sed dictum felis ante, vitae egestas erat hendrerit at. Integer aliquam cursus magna eu viverra. Morbi erat tortor, tincidunt eget luctus nec, mollis vitae massa. Integer at lacus eget justo sodales ultrices. Etiam elit enim, ornare at cursus eu, mollis sed nisl. In hac habitasse platea dictumst. Nulla facilisi. Nullam vitae lacus eu arcu faucibus rhoncus at a lorem. Vivamus posuere enim neque, ut dapibus ligula facilisis nec. Proin neque justo, fringilla at egestas et, ultricies sed ante. Nam vel dapibus nunc. Cras euismod, ante nec sodales gravida, felis nisi vulputate felis, sit amet semper diam sapien quis odio. Sed ullamcorper pharetra viverra. Duis mollis semper nibh, nec suscipit magna viverra ut. Pellentesque volutpat elit ut ex fringilla, id venenatis turpis congue."
+            },
+            {
+                image: "images/pic3.jpeg",
+                subheading: "It's spring",
+                content: "Curabitur ut rutrum mi, ut pretium nunc. Cras sit amet congue enim, et sagittis lorem. In maximus metus ut convallis finibus. Nam mi felis, ornare sed interdum non, efficitur ac ex. Cras cursus erat lectus, vitae viverra quam lacinia rutrum. Vestibulum sodales dolor tempus ante accumsan rhoncus. Aenean aliquam cursus orci a molestie. Fusce mollis facilisis fermentum. Mauris ornare placerat nulla ac gravida. Curabitur non pellentesque dui. Cras feugiat sollicitudin mi, ac varius justo cursus non. Nullam ut mauris at lectus mattis pulvinar."
+            },
+            {
+                image: "images/pic4.jpeg",
+                subheading: "Brrrrr",
+                content: "Sed dictum felis ante, vitae egestas erat hendrerit at. Integer aliquam cursus magna eu viverra. Morbi erat tortor, tincidunt eget luctus nec, mollis vitae massa. Integer at lacus eget justo sodales ultrices. Etiam elit enim, ornare at cursus eu, mollis sed nisl. In hac habitasse platea dictumst. Nulla facilisi. Nullam vitae lacus eu arcu faucibus rhoncus at a lorem. Vivamus posuere enim neque, ut dapibus ligula facilisis nec. Proin neque justo, fringilla at egestas et, ultricies sed ante. Nam vel dapibus nunc. Cras euismod, ante nec sodales gravida, felis nisi vulputate felis, sit amet semper diam sapien quis odio. Sed ullamcorper pharetra viverra. Duis mollis semper nibh, nec suscipit magna viverra ut. Pellentesque volutpat elit ut ex fringilla, id venenatis turpis congue."
+            },
+            {
+                image: "images/pic5.jpg",
+                subheading: "Brrrrr",
+                content: "Sed dictum felis ante, vitae egestas erat hendrerit at. Integer aliquam cursus magna eu viverra. Morbi erat tortor, tincidunt eget luctus nec, mollis vitae massa. Integer at lacus eget justo sodales ultrices. Etiam elit enim, ornare at cursus eu, mollis sed nisl. In hac habitasse platea dictumst. Nulla facilisi. Nullam vitae lacus eu arcu faucibus rhoncus at a lorem. Vivamus posuere enim neque, ut dapibus ligula facilisis nec. Proin neque justo, fringilla at egestas et, ultricies sed ante. Nam vel dapibus nunc. Cras euismod, ante nec sodales gravida, felis nisi vulputate felis, sit amet semper diam sapien quis odio. Sed ullamcorper pharetra viverra. Duis mollis semper nibh, nec suscipit magna viverra ut. Pellentesque volutpat elit ut ex fringilla, id venenatis turpis congue."
+            },
+            {
+                image: "images/pic6.jpg",
+                subheading: "Brrrrr",
+                content: "Sed dictum felis ante, vitae egestas erat hendrerit at. Integer aliquam cursus magna eu viverra. Morbi erat tortor, tincidunt eget luctus nec, mollis vitae massa. Integer at lacus eget justo sodales ultrices. Etiam elit enim, ornare at cursus eu, mollis sed nisl. In hac habitasse platea dictumst. Nulla facilisi. Nullam vitae lacus eu arcu faucibus rhoncus at a lorem. Vivamus posuere enim neque, ut dapibus ligula facilisis nec. Proin neque justo, fringilla at egestas et, ultricies sed ante. Nam vel dapibus nunc. Cras euismod, ante nec sodales gravida, felis nisi vulputate felis, sit amet semper diam sapien quis odio. Sed ullamcorper pharetra viverra. Duis mollis semper nibh, nec suscipit magna viverra ut. Pellentesque volutpat elit ut ex fringilla, id venenatis turpis congue."
+            }
+
+        ];
+        //loop through postdata
+        var myHtml = "";
+        for(var i=0; i<postsData.length; i=i+1) {
+          myHtml = myHtml + '<div class="media">'+
+                    '<div class="media-left media-middle">'+
+                    '<a href="#">'+
+                        '<img class="media-object" src="'+postsData[i].image +'" alt="...">'+
+                      '</a>'+
+                    '</div>'+
+                    '<div class="media-body">'+
+                      '<h4 class="media-heading"> '+postsData[i].subheading+' </h4>'+
+                      postsData[i].content +
+                    '</div>'+
+                  '</div>';
+
+        }
+$(document).ready(function (){
+        $("#posts").html(myHtml);
+      })
+    </script>
+</body>
+
+</html>
