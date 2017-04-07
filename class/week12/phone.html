@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phones</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+    </style>
+    <style media="screen">
+        body {
+            font: raleway;
+        }
+
+        .height1 {
+            height: 75px;
+            max-height: 75px;
+            min-height: 75px;
+        }
+
+        .height2 {
+            height: 800px;
+            max-height: 800px;
+            min-height: 800px;
+        }
+
+        #phoneInfo img {
+            width: 200px;
+            float: left;
+        }
+
+        #phoneInfo div {
+            padding-top: 100px;
+            padding-left: 350px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <!--try container-fluid-->
+        <div class="row">
+            <div class="col-md-12 height1 randomColor">
+
+            </div>
+        </div>
+        <div class="row" id="main">
+            <div class="col-md-2 height2 randomColor">
+
+            </div>
+            <div class="col-md-8 height2">
+                <div id="phoneInfo">
+                    <img src="data:image/jpeg;base64,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" alt="picture">
+                    <div>
+                        Phones Woop woop
+                    </div>
+                </div>
+
+                <table id="statsTable" class="table table-hover">
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Provider</th>
+                        <th>Price</th>
+                        <th>Colour</th>
+                    </tr>
+
+                </table>
+
+            </div>
+            <div class="col-md-2 height2 randomColor">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12 height1 randomColor">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * max + min);
+        }
+
+        $(document).ready(function() {
+
+            var bodyColumns = $(".randomColor");
+
+            bodyColumns.each(function() {
+
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+            })
+
+            //$("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+            var url = "https://lifeguardwriter.github.io/class/week12/myJson.json";
+
+            //we use get for an html file
+            //we use getJSON for a .json file
+            $.getJSON(url)
+                .done(function(data) {
+                    console.log("success!");
+                    console.dir(data);
+                    var myHtml = "";
+                    for (var i = 0; i < data.length; i++) {
+                        console.log("i " + i + " name " + data[i].name);
+                        myHtml += "<tr data-index='" + i + "'>" +
+                            "<td>" + (i + 1) + "</td>" + //rank
+                            "<td>" + data[i].name + "</td>" + //name
+                            "<td>" + data[i].price + "</td>" + //price
+                            "<td>" + data[i].provider + "</td>" + //provider
+                            "<td>" + data[i].colour + "</td>" + //Phone colour
+                            "</tr>"
+                    }
+                    $("table").append(myHtml);
+                    //for all td in statsTable turn on a click, then execute the function
+                    $("#statsTable").find("td").on("click", function() {
+                        //get the closest row of this td and get the data-index attribute
+                        var index = $(this).closest("tr").attr("data-index");
+                        console.log("index :" + index);
+                        //change the src attr to the correct image
+                        $("#phoneInfo").find("img").attr("src",data[index].image);
+                        //replace the html in the phoneInfo div with player details
+                        $("#phoneInfo").find("div").html(data[index].details);
+
+                    })
+                })
+                .fail(function(data) {
+                    console.log("fail!");
+                    console.dir(data);
+                })
+        })
+    </script>
+
+</body>
+
+</html>
